@@ -1,0 +1,108 @@
+footer {
+    width: 100%;
+    background-image: linear-gradient(to right, #2575fc, #6a11cb); 
+    padding: 40px 0;
+    color: white;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-logo {
+    font-size: 28pt;
+    font-family: "Bungee", sans-serif;
+    color: #FFD700; /
+    margin-bottom: 30px;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 20px 0;
+}
+
+.footer-column h3 {
+    font-size: 18pt;
+    color: #FFD700; 
+    margin-bottom: 20px;
+}
+
+.footer-column p,
+.footer-column a {
+    font-size: 14pt;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #FFD700; 
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons li {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.7); 
+}
+
+.footer-divider {
+    margin: 30px auto;
+    border: 0;
+    height: 2px;
+    width: 50%;
+    background-color: #FFD700; 
+    animation: hr-expand 1.5s ease; 
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14pt;
+    color: white;
+}
+
+
+@keyframes hr-expand {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+

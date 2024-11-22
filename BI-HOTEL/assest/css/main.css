@@ -1,0 +1,278 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #eef2f3; /* Subtle, soft gradient */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    height: 1080px; 
+    background-image: url('https://cache.marriott.com/content/dam/marriott-renditions/CCULR/cculr-king-guestroom-9247-hor-feat.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1920px:*'); 
+    background-size:cover ;
+    background-position: center;
+/*     background-attachment: fixed;  Creates a parallax effect */ */
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: seashell;
+    text-align: center;
+}
+
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1270px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1; 
+}
+
+.hero h1 {
+    font-size: 70pt;
+    z-index: 2; 
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+    margin-bottom: 20px;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.hero p {
+    font-size: 22pt;
+    margin-bottom: 40px;
+    z-index: 2;
+    animation: fadeInDown 1.5s ease-in-out;
+}
+
+.hero .btn {
+    padding: 15px 30px;
+    background-color: #ffd700;
+    color: #333;
+    text-transform: uppercase;
+    border-radius: 30px;
+    border: none;
+    font-size: 20pt;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+.hero .btn:hover {
+    background-color: #ff8c00;
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.services-section {
+    padding: 100px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.services-section h2 {
+    font-size: 42pt;
+    margin-bottom: 40px;
+    color: #6a11cb;
+    text-transform: uppercase;
+    animation: fadeInDown 1.5s ease-in-out;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.service-card {
+    background-color: white;
+    padding: 40px;
+    width: 30%;
+    border-radius: 15px;
+    box-shadow: 0 32px 74px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.service-card img {
+    width: 100%;
+    margin-bottom: 40px;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover img {
+    transform: rotate(15deg); /* Rotates icon on hover */
+}
+
+.service-card h3 {
+    font-size: 28pt;
+    margin-bottom: 15px;
+    color: #2575fc;
+}
+
+.service-card p {
+    font-size: 16pt;
+    color: #666;
+}
+
+.gallery-section {
+    padding: 100px 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.gallery-section h2 {
+    font-size: 42pt;
+    margin-bottom: 40px;
+    color: #ff8c00;
+    text-transform: uppercase;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.gallery-item {
+    width: 30%;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.2); /* Zoom effect on hover */
+}
+
+.gallery-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+
+.cta-section {
+    padding: 120px 20px;
+    background-image: linear-gradient(to right, #ff8c00, #ffd700);
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.cta-section h2 {
+    font-size: 48pt;
+    margin-bottom: 40px;
+    animation: fadeInDown 1.5s ease-in-out;
+}
+
+.cta-section p {
+    font-size: 22pt;
+    margin-bottom: 50px;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.cta-section .btn {
+    padding: 20px 40px;
+    background-color: white;
+    color: #ff8c00;
+    text-transform: uppercase;
+    border-radius: 50px;
+    border: none;
+    font-size: 22pt;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.cta-section .btn:hover {
+    background-color: #ffd700;
+    transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+a{
+    z-index: 2;
+}

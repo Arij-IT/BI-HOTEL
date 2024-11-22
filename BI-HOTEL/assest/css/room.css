@@ -1,0 +1,209 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.rooms-section {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(to bottom, #ffffff, #e6e6e6);
+}
+
+.rooms-section h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #6a11cb;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.rooms-section p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 50px;
+    animation: fadeInUp 1.2s ease-in-out;
+}
+
+/* Rooms Container */
+.rooms-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Room Card Styling */
+.room-card {
+    width: 300px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    position: relative;
+    animation: slideIn 1s ease-in-out;
+}
+
+.room-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.room-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Room Info Section */
+.room-info {
+    padding: 20px;
+    text-align: left;
+}
+
+.room-info h3 {
+    font-size: 22px;
+    color: #333;
+    margin: 0 0 10px;
+}
+
+.room-info p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+/* Price Styling */
+.price {
+    display: block;
+    font-size: 20px;
+    color: #ff8c00;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Button Styling */
+.room-btn {
+    display: block;
+    width: 90%;
+    margin: 0 auto 20px;
+    padding: 12px 0;
+    background-color: #ff8c00;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.room-btn:hover {
+    background-color: #ffd700;
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateX(-30px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .rooms-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .room-card {
+        width: 90%;
+    }
+}
+
+
+
+/* Feature Banner Styling */
+.feature-banner {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-image: url('https://www.itchotels.com/content/dam/itchotels/in/umbrella/itc/hotels/itcratnadipa-colombo/images/overview/headmast/d/towers-suite-shot2.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-overlay {
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 15px;
+    max-width: 80%;
+    width: 100%;
+}
+
+.banner-overlay h2 {
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.banner-overlay p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #e0e0e0;
+    animation: fadeInUp 1.2s ease-in-out;
+}
+
+.room-features {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 65px;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.room-features li {
+    background-color: #ff8c00;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+.room-features li:hover {
+    transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

@@ -1,0 +1,96 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+.booking-background {
+    position: relative;
+    background-image: url('https://www.itchotels.com/content/dam/itchotels/in/umbrella/images/headmast-desktop/bank-rewards.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 1080px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.booking-container > div {
+    text-align: center;
+}
+
+.booking-container label {
+    font-size: 14px;
+    color: #888;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.booking-container input,
+.booking-container select {
+    padding: 10px;
+    width: 200px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    transition: border-color 0.3s ease;
+}
+
+.booking-container input:focus,
+.booking-container select:focus {
+    border-color: #ff8c00;
+}
+
+.booking-container input[type="date"] {
+    width: 220px;
+}
+
+
+.submit-btn button {
+    padding: 12px 30px;
+    background-color: #ff8c00;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.submit-btn button:hover {
+    background-color: #ffd700;
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 768px) {
+    .booking-container {
+        flex-direction: column;
+    }
+
+    .booking-container > div {
+        margin-bottom: 20px;
+    }
+}
